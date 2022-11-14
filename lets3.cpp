@@ -51,7 +51,7 @@ double itc_pow(int a1, int a2) {
         a4=-1*a2;
     else
         a4=a2;
-    for (long long i = 0; i < a3; ++i)
+    for (long long i=0;i<a4;++i)
         a3*=a1;
     if (a2<0)
         a3=1/a3;
