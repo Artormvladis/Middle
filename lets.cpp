@@ -3,6 +3,7 @@ void itc_num_print(int a1){
     cout<<a1;
 }
 int itc_len_num(long long a1){
+if (a1<0){a1=-1*a1;} 
     int a2;
     a2=0;
     if (a1==0){
@@ -21,7 +22,8 @@ int itc_len_num(long long a1){
     return a2;
 }
 int itc_sum_num(long long a1){
-    int a2,a3;
+    if (a1<0){a1=-1*a1;} 
+int a2,a3;
     a2=0;
     a3=0;
     while (a1>0){
@@ -32,6 +34,8 @@ int itc_sum_num(long long a1){
     return a3;
 }
 long long itc_multi_num(long long a1){
+if (a1<0){a1=-1*a1;} 
+
     int a2,a3;
     a2=1;
     a3=1;
