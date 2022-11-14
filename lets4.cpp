@@ -18,11 +18,12 @@ int itc_mirror_count(long long a1){
     } 
     return a2;
 }
-int itc_rev_covert_num(long long a1, int a2){
-    long long a3=0, a4=0;
-    while (a1>0){
- a3+=a1%10*itc_pow(a2, a4);
- a4++;
- a1/=10;
+int itc_rev_oct_num(long long a1){
+    long long a2=0, a3=0;
+    while (a1<0){
+        a2+=a1%10*itc_pow(8, a3);
+        a3++;
+        a1/=10;
     }
-    return a3;}
+    return a2;
+}
